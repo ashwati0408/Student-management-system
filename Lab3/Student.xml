@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Student.xsl"?>
+<Student_Management_System>
+<Student>
+	<reg_num>R1923001</reg_num>
+	<first_name>Abhinay</first_name>
+	<last_name>Nelson</last_name>
+	<college_name>St. Francis College</college_name>
+	<email_id>abhinay.nelson@gmail.com</email_id>
+	<phn_num>789567432</phn_num>
+</Student>
+<Student>
+	<reg_num>R1923002</reg_num>
+	<first_name>Abraham</first_name>
+	<last_name>Paul</last_name>////
+	<college_name>St. Francis College</college_name>
+	<email_id>abraham.paul@gmail.com</email_id>
+	<phn_num>8971345678</phn_num>
+</Student>
+<Student>
+	<reg_num>R1923003</reg_num>
+	<first_name>Aman</first_name>
+	<last_name>Kumar</last_name>
+	<college_name>St. Francis College</college_name>
+	<email_id>aman.kumar@gmail.com</email_id>
+	<phn_num>9081234567</phn_num>
+</Student>
+<Student>
+	<reg_num>R1923004</reg_num>
+	<first_name>Anusha</first_name>
+	<last_name>V</last_name>
+	<college_name>St. Francis College</college_name>
+	<email_id>anusha.v@gmail.com</email_id>
+	<phn_num>9780565743</phn_num>
+</Student>
+<Student>
+	<reg_num>R1923005</reg_num>
+	<first_name>Archana</first_name>
+	<last_name>R</last_name>
+	<college_name>St. Francis College</college_name>
+	<email_id>archana.r@gmail.com</email_id>
+	<phn_num>8971345067</phn_num>
+</Student>
+<Student>
+	<reg_num>R1923006</reg_num>
+	<first_name>Archana</first_name>
+	<last_name>V</last_name>
+	<college_name>St. Francis College</college_name>
+	<email_id>archana.v@gmail.com</email_id>
+	<phn_num>89713393666</phn_num>
+</Student>
+<Student>
+	<reg_num>R1923007</reg_num>
+	<first_name>Ashwati</first_name>
+	<last_name>Francis</last_name>
+	<college_name>St. Francis College</college_name>
+	<email_id>ashwati.francis@gmail.com</email_id>
+	<phn_num>8976745463</phn_num>
+</Student>
+<Student>
+	<reg_num>R1923008</reg_num>
+	<first_name>Azaruddin</first_name>
+	<last_name>Shah</last_name>
+	<college_name>St. Francis College</college_name>
+	<email_id>azaruddin.shah@gmail.com</email_id>
+	<phn_num>9090880809</phn_num>
+</Student>
+</Student_Management_System>

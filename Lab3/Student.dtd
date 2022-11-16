@@ -1,0 +1,10 @@
+<!DOCTYPE Student_Management_System
+[
+<!ELEMENT Student_Management_System (reg_num,first_name,last_name,college_name,email_id,phn_num)>
+<!ELEMENT reg_num (#PCDATA)>
+<!ELEMENT first_name (#PCDATA)>
+<!ELEMENT last_name (#PCDATA)>
+<!ELEMENT college_name (#PCDATA)>
+<!ELEMENT email_id (#PCDATA)>
+<!ELEMENT phn_num (#PCDATA)>
+]>
