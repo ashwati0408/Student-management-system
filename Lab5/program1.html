@@ -1,0 +1,217 @@
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .nav-item {
+            margin-left: 40px;
+            font-size: larger;
+            font-weight: 800;
+        }
+
+        .header {
+            margin: 20;
+            margin-left: 100px;
+        }
+
+        .row.content {
+            height: 100%;
+        }
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+            padding-top: 20px;
+            background-color: #e3f2fd;
+            height: 100%;
+        }
+
+        @media screen and (max-width: 767px) {
+            .sidenav {
+                height: auto;
+                padding: 15px;
+            }
+
+            .row.content {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<div>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a href="program1.html">
+                <img src="https://clicktranscripts.com/new/wp-content/uploads/2022/05/christ-uni.png" width="90"
+                    height="80">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="program1.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Attendance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="placement.html">Placement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Counsel</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid ">
+        <div class="row content text-center">
+            <div class="col-sm-3 sidenav">
+                <h3><strong>Welcome 2247144</STRONG></h3>
+                <br>
+                <table border="3" width="100%">
+                    <tr>
+                        <th>Contact</th>
+                        <th>Notifications</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><a href="https://mail.google.com/mail/u/0/#inbox">Personal Mail-id</a></p>
+                        </td>
+                        <td>
+                            <p><a href="https://mail.google.com/mail/u/1/#inbox">Official mail-id</a></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <p><a href="https://www.businesstoday.in/industry/it">Latest IT news</a></p>
+                        </td>
+                    </tr>
+                </table><br>
+                <hr>
+
+                <div class="well">
+                    <h5><strong>Location</strong></h5>
+                    <hr>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7777.169048690895!2d77.59742662310599!3d12.934403755674667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15392f6ea2f9%3A0x851befe3b3f1d0b0!2sCentral%20campus%2C%20Christ%20University!5e0!3m2!1sen!2sin!4v1667810236436!5m2!1sen!2sin"
+                        width="250" height="350" style="border:0;"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
+
+                    <p>Click the button to get your coordinates.</p>
+                    <button class="btn btn-secondary" onclick="getLocation()">Get My Co-ordinates</button>
+                    <p id="demo"></p>
+                    <script>
+                        var x = document.getElementById("demo");
+
+                        function getLocation() {
+                            if (navigator.geolocation) {
+                                navigator.geolocation.getCurrentPosition(showPosition);
+                            } else {
+                                x.innerHTML = "Geolocation is not supported by this browser.";
+                            }
+                        }
+
+                        function showPosition(position) {
+                            x.innerHTML = "<br>Latitude: " + position.coords.latitude +
+                                "<br>Longitude: " + position.coords.longitude;
+                        }
+                    </script>
+                </div>
+
+            </div>
+
+
+
+
+
+
+            <div class="col-sm-8">
+                <div class="header">
+                    <canvas id="myCanvas" width="250" height="100">
+                        LIFE IN CAMPUS</canvas>
+
+                    <script>
+                        var c = document.getElementById("myCanvas");
+                        var ctx = c.getContext("2d");
+                        ctx.font = "30px Arial";
+                        ctx.fillText("LIFE IN CAMPUS",10,30);
+                    </script>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <div class="well">
+                                <img src="https://christuniversity.in/uploads/studentlife/thumb/-111_20201123031857..jpg"
+                                    usemap="#workmap">
+                                <h5>Campus</h5>
+                                <map name="workmap">
+                                    <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://christuniversity.in/bangalore-central-campus">
+                                </map>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="well">
+                                <img src="https://christuniversity.in/uploads/studentlife/thumb/hostelanddining_20200921044735_20201123045100..jpg"
+                                    usemap="#hostel">
+                                <h5>Hostel</h5>
+                                <map name="hostel">
+                                    <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://christuniversity.in/student-life/main%20campus/hostel-and-dining/Mzc5NQ==">
+                                </map>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="well">
+                                <img src="https://christuniversity.in/uploads/studentlife/thumb/DSC08567_20201123045111_20201206064710..JPG"
+                                    usemap="#library">
+                                <h5>Library</h5>
+                                <map name="library">
+                                    <area shape="rect" coords="34,44,270,350" alt="Computer" href="http://library.christuniversity.in/home.php#home">
+                                </map>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="well">
+                                <img src="https://christuniversity.in/uploads/studentlife/thumb/test33_20201123033443..jpg"
+                                    usemap="#sports">
+                                <h5>Sports</h5>
+                                <map name="sports">
+                                    <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://christuniversity.in/sports#">
+                                </map>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h2 style="color: rgb(4, 4, 83);"><strong>Christ University Anthem</strong></h2>
+                    <video width="800" height="500" controls autoplay>
+                        <source
+                            src="https://christuniversity.in/uploads/userfiles/Christ%20University%20Anthem%202019(1).mp4"
+                            type="video/ogg" />
+                    </video>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    </body>
+
+</html>
